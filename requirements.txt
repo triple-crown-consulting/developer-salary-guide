@@ -1,4 +1,6 @@
+cookiecutter
 Bootstrap-Flask==1.5.1
 Flask==1.1.2
+flask-bootstrap
 Flask-SQLAlchemy==2.4.4
 gunicorn==20.0.4
