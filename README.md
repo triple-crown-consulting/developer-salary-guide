@@ -1,1 +1,1 @@
-# salary-adviser
+# Developer Salary Guide
