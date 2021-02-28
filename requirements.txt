@@ -1,6 +1,10 @@
 click==7.1.2
 Flask==1.1.2
+Flask-Login==0.4.1
 gunicorn
 itsdangerous==1.1.0
+requests==2.21.0
 MarkupSafe==1.1.1
+oauthlib==3.0.1
+pyOpenSSL==19.0.0
 Werkzeug==1.0.1
