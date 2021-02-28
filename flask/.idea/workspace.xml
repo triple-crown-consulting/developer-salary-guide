@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c1a4fa5-86b1-4d39-a8ef-e682ce063fb8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/.github/dependabot.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/.github/workflows/lint.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/assets/img/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/assets/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/assets/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/autoapp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/commands.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/extensions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/public/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/public/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/public/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/401.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/public/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/public/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/public/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/templates/users/members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/user/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/user/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/user/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/user/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/gfd/webpack/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/requirements/dev.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/requirements/prod.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/shell_scripts/auto_pipenv.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/shell_scripts/supervisord_entrypoint.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/supervisord.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/supervisord_programs/gunicorn.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/tests/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/tests/factories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/tests/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/tests/test_forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/tests/test_functional.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/tests/test_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gfd/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1p7vIrQaieR29LFCX1JRCQto2M6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="flask" type="Python.FlaskServer">
+      <module name="flask" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c1a4fa5-86b1-4d39-a8ef-e682ce063fb8" name="Default Changelist" comment="" />
+      <created>1614546866132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614546866132</updated>
+      <workItem from="1614546877093" duration="155000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
