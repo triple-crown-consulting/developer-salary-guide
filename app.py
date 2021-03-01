@@ -163,7 +163,7 @@ def predict():
     prediction = model.predict(final)
     output = '{0: {1:.2f}2f}'.format(prediction[0], 2)
 
-    return render_template('advise.html', predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${}'.format(output))
+    return render_template('advise.html', predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${} per year.'.format(output))
 
 
 @app.route("/logout")
