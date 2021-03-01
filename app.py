@@ -42,7 +42,7 @@ login_manager.init_app(app)
 client = WebApplicationClient(GOOGLE_CLIENT_ID)
 
 # For using the machine learning model on the web app
-model = pickle.load(open('./notebooks/test_model.pkl', 'rb'))
+model = pickle.load(open('./notebooks/model2.pkl', 'rb'))
 
 # Flask-Login helper to retrieve a user from our db
 @login_manager.user_loader
@@ -160,7 +160,7 @@ def advisor():
 def predict():
     int_features = [int(x) for x in request.form.values()]
     final = [np.array(int_features)]
-    prediction = model.predict(final)
+    prediction = model2.predict(final)
     output = '{0: {1:.2f}2f}'.format(prediction[0], 2)
 
     return render_template('advise.html', predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${} per year.'.format(output))
