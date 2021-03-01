@@ -62,7 +62,7 @@ def home():
     if current_user.is_authenticated:
         return render_template('index.html')
     else:
-        return render_template('public.html')
+        return render_template('about.html')
 
 
 def get_google_provider_cfg():
@@ -173,7 +173,7 @@ def contact():
 @login_required
 def logout():
     logout_user()
-    # return render_template('public.html')
+    # return render_template('about.html')
     return redirect(url_for("home"))
 
 
