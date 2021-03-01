@@ -31,7 +31,7 @@ login_manager.init_app(app)
 
 # Naive database setup
 # try:
-#     init_db_command()
+    init_db_command()
 # except sqlite3.OperationalError:
 #     # Assume it's already been created
 #     pass
@@ -39,15 +39,18 @@ login_manager.init_app(app)
 # OAuth 2 client setup
 client = WebApplicationClient(GOOGLE_CLIENT_ID)
 
+
 # Flask-Login helper to retrieve a user from our db
 @login_manager.user_loader
 def load_user(user_id):
     return User.get(user_id)
 
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                           'favicon.ico',mimetype='image/vnd.microsoft.icon')
+
 
 @app.route('/')
 def home():
@@ -56,8 +59,10 @@ def home():
     else:
         return '<a class="btn btn-primary" href="/login">Google Login</a>'
 
+
 def get_google_provider_cfg():
     return requests.get(GOOGLE_DISCOVERY_URL).json()
+
 
 @app.route("/login")
 def login():
@@ -73,6 +78,7 @@ def login():
         scope=["openid", "email", "profile"],
     )
     return redirect(request_uri)
+
 
 @app.route("/login/callback")
 def callback():
@@ -134,6 +140,7 @@ def callback():
 
     # Send user back to homepage
     return redirect(url_for("index"))
+
 
 @app.route("/logout")
 @login_required
