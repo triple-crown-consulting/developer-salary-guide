@@ -148,15 +148,6 @@ def callback():
     return render_template('index.html')
 
 
-@app.route("/advisor")
-@login_required
-def advisor():
-    if current_user.is_authenticated:
-        return render_template('advise.html')
-    else:
-        return render_template('public.html')
-
-
 @app.route("/predict", methods=["POST", "GET"])
 def predict():
     int_features = [int(x) for x in request.form.values()]
@@ -171,6 +162,11 @@ def predict():
                                                                                                      final[0][0],
                                                                                                      final[0][1],
                                                                                                      final[0][2], ))
+
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 
 @app.route("/logout")
