@@ -65,6 +65,11 @@ def home():
         return render_template('about.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
 def get_google_provider_cfg():
     return requests.get(GOOGLE_DISCOVERY_URL).json()
 
