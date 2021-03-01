@@ -69,8 +69,8 @@
 </div>
 
 <script>
-  let form = document.getElementById("advisorForm");
-  function handleForm(event) { event.preventDefault(); }
-  form.addEventListener('submit', handleForm);
+    $( "form" ).submit(function( event ) {
+       event.preventDefault();
+    });
 </script>
 {% endblock %}
