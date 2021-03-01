@@ -1,3 +1,3 @@
-$( "form" ).submit(function( event ) {
-   event.preventDefault();
-});
+let form = document.getElementById("advisorForm");
+function handleForm(event) { event.preventDefault(); }
+form.addEventListener('submit', handleForm);
