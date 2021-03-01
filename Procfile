@@ -1,2 +1,2 @@
 web: gunicorn app:app
-flask init-db
+python3 app.py

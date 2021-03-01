@@ -19,7 +19,7 @@ from user import User
 # Configuration
 GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", None)
 GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", None)
-GOOGLE_DISCOVERY_URL = os.environ.get("GOOGLE_DISCOVERY_URL", None)
+GOOGLE_DISCOVERY_URL = 'https://accounts.google.com/.well-known/openid-configuration'
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY") or os.urandom(24)
@@ -30,11 +30,11 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 # Naive database setup
-# try:
-#     init_db_command()
-# except sqlite3.OperationalError:
-#     # Assume it's already been created
-#     pass
+try:
+    init_db_command()
+except sqlite3.OperationalError:
+    # Assume it's already been created
+    pass
 
 # OAuth 2 client setup
 client = WebApplicationClient(GOOGLE_CLIENT_ID)
