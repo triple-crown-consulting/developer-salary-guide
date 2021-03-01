@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    <h1>Test</h1>
+    <h1>Recruiter Area</h1>
 <hr>
 
    <p>this area will be content for the project</p>
@@ -15,5 +15,13 @@
 {#            <a class="button" href="/logout">Logout</a>.format(#}
 {#                current_user.name, current_user.email, current_user.profile_pic)#}
 
+
+    <div class="card">
+      <img src='{{ current_user.profile_pic }}' alt='Google profile pic' style="width:100%">
+      <h2>Logged in as:</h2>
+      <p class="title">{{ current_user.name }}</p>
+      <p>{{ current_user.email }}</p>
+      <p><a class="btn btn-primary" href="/logout">Logout</a></p>
+    </div>
 
 {% endblock %}

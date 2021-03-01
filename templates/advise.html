@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Developer Salary Guide{% endblock %}
+
+{% block content %}
+
+    <h1>Interactive Area</h1>
+<hr>
+
+   <p>this area will be content for the project</p>
+<hr>
+    <p>Hello, {{ current_user.name }}! You're logged in! Email: {{ current_user.email }}</p>
+            <div><p>Google Profile Picture:</p>
+            <img src='{{ current_user.profile_pic }}' alt='Google profile pic'></img></div>
+            <a class="btn btn-primary" href="/logout">Logout</a>
+{#            <a class="button" href="/logout">Logout</a>.format(#}
+{#                current_user.name, current_user.email, current_user.profile_pic)#}
+
+
+{% endblock %}
