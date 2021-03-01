@@ -161,9 +161,9 @@ def predict():
     int_features = [int(x) for x in request.form.values()]
     final = [np.array(int_features)]
     prediction = model.predict(final)
-    # output = '{0: {1}f}'.format(prediction[0][1], 2)
+    output = '{0: {1:.2f}2f}'.format(prediction[0], 2)
 
-    return render_template('advise.html', predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${}'.format(prediction))
+    return render_template('advise.html', predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${}'.format(output))
 
 
 @app.route("/logout")
