@@ -143,6 +143,15 @@ def callback():
     return render_template('index.html')
 
 
+@app.route("/advisor")
+@login_required
+def advisor():
+    if current_user.is_authenticated:
+        return render_template('advise.html')
+    else:
+        return render_template('public.html')
+
+
 @app.route("/logout")
 @login_required
 def logout():
