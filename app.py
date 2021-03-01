@@ -1,6 +1,6 @@
-import json # for auth
-import sqlite3 # for auth
-import os # for the favicon
+import json  # for auth
+# import sqlite3  # for auth
+import os  # for the favicon
 from flask import Flask, redirect, render_template, request, send_from_directory, url_for
 from flask_login import (
     LoginManager,
@@ -15,7 +15,7 @@ import requests
 import pickle
 import numpy as np
 
-from db import init_db_command
+# from db import init_db_command
 from user import User
 
 # Configuration
@@ -44,6 +44,7 @@ client = WebApplicationClient(GOOGLE_CLIENT_ID)
 # For using the machine learning model on the web app
 model = pickle.load(open('./notebooks/model2.pkl', 'rb'))
 
+
 # Flask-Login helper to retrieve a user from our db
 @login_manager.user_loader
 def load_user(user_id):
@@ -53,7 +54,7 @@ def load_user(user_id):
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
-                          'favicon.ico',mimetype='image/vnd.microsoft.icon')
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
 @app.route('/')
@@ -163,8 +164,9 @@ def predict():
     prediction = model.predict(final)
     output = '{0:{1:},.2f}'.format(prediction[0], 2)
 
-
-    return render_template('advise.html', predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${} per year.'.format(output))
+    return render_template('advise.html',
+                           predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${} per '
+                                          'year.'.format(output))
 
 
 @app.route("/logout")
@@ -177,7 +179,6 @@ def logout():
 
 if __name__ == "__main__":
     app.run(ssl_context="adhoc")
-
 
 # if __name__ == '__main__':
 #     app.run(debug=True)

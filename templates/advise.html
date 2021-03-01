@@ -68,9 +68,7 @@
   <p><a class="btn btn-primary" href="/logout">Logout</a></p>
 </div>
 
-<script>
-    $( "form" ).submit(function( event ) {
-       event.preventDefault();
-    });
-</script>
+<script type=text/javascript src="{{
+  url_for('static', filename='js/main.js') }}"></script>
+
 {% endblock %}
