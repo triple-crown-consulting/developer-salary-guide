@@ -147,7 +147,7 @@ def callback():
 @login_required
 def logout():
     logout_user()
-    return render_template('index.html')
+    return '<a class="btn btn-primary" href="/login">Google Login</a>'
 
 
 if __name__ == "__main__":
