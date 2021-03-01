@@ -9,6 +9,7 @@ from flask_login import (
     login_user,
     logout_user,
 )
+
 from oauthlib.oauth2 import WebApplicationClient
 import requests
 
@@ -53,7 +54,7 @@ def home():
     if current_user.is_authenticated:
         return render_template('index.html')
     else:
-        return '<a class="button" href="/login">Google Login</a>'
+        return '<a class="btn btn-primary" href="/login">Google Login</a>'
 
 def get_google_provider_cfg():
     return requests.get(GOOGLE_DISCOVERY_URL).json()
