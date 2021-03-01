@@ -154,6 +154,7 @@ def callback():
 
 
 @app.route("/predict", methods=["POST", "GET"])
+@login_required
 def predict():
     int_features = [int(x) for x in request.form.values()]
     final = [np.array(int_features)]
