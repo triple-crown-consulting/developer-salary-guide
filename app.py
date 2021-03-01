@@ -164,7 +164,7 @@ def predict():
     prediction = model.predict(final)
     output = '{0:{1:},.2f}'.format(prediction[0], 2)
 
-    return render_template('advise.html',
+    return render_template('index.html',
                            predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${} per '
                                           'year.\n\nThis calculation was based on a Level of Education = {}, {} Years '
                                           'of Coding, and {} Years of Coding Professionally.'.format(output,
