@@ -57,7 +57,7 @@ def home():
     if current_user.is_authenticated:
         return render_template('index.html')
     else:
-        return '<a class="btn btn-primary" href="/login">Google Login</a>'
+        return render_template('public.html')
 
 
 def get_google_provider_cfg():
@@ -147,7 +147,7 @@ def callback():
 @login_required
 def logout():
     logout_user()
-    return '<a class="btn btn-primary" href="/login">Google Login</a>'
+    return render_template('public.html')
 
 
 if __name__ == "__main__":
