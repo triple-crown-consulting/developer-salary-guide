@@ -42,7 +42,7 @@ login_manager.init_app(app)
 client = WebApplicationClient(GOOGLE_CLIENT_ID)
 
 # For using the machine learning model on the web app
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('./notebooks/test_model.pkl', 'rb'))
 
 # Flask-Login helper to retrieve a user from our db
 @login_manager.user_loader
@@ -154,6 +154,7 @@ def advisor():
         return render_template('advise.html')
     else:
         return render_template('public.html')
+
 
 @app.route("/precict", methods=["POST", "GET"])
 def predict():
