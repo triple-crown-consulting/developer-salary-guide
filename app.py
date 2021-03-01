@@ -156,7 +156,7 @@ def advisor():
         return render_template('public.html')
 
 
-@app.route("/precict", methods=["POST", "GET"])
+@app.route("/predict", methods=["POST", "GET"])
 def predict():
     int_features = [int(x) for x in request.form.values()]
     final = [np.array(int_features)]
