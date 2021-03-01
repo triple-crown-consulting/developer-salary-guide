@@ -12,6 +12,8 @@ from flask_login import (
 
 from oauthlib.oauth2 import WebApplicationClient
 import requests
+import pickle
+import numpy as np
 
 from db import init_db_command
 from user import User
@@ -39,6 +41,8 @@ login_manager.init_app(app)
 # OAuth 2 client setup
 client = WebApplicationClient(GOOGLE_CLIENT_ID)
 
+# For using the machine learning model on the web app
+model = pickle.load(open('model.pkl', 'rb'))
 
 # Flask-Login helper to retrieve a user from our db
 @login_manager.user_loader
@@ -150,6 +154,13 @@ def advisor():
         return render_template('advise.html')
     else:
         return render_template('public.html')
+
+@app.route("/precict", methods=["POST", "GET"])
+def predict():
+    int_features = [int(x) for x in request.form.values()]
+    final = [np.array(int_features)]
+    prediction = model.predict_salary(final)
+    output = '{0: {1}f}'.format(prediction[0][1], 2)
 
 
 @app.route("/logout")
