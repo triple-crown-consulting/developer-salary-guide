@@ -139,7 +139,8 @@ def callback():
     login_user(user)
 
     # Send user back to homepage
-    return redirect(url_for("index"))
+    # return redirect(url_for("index"))
+    return render_template('index.html')
 
 
 @app.route("/logout")
