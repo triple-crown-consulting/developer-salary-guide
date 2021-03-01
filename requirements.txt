@@ -5,6 +5,7 @@ gunicorn
 itsdangerous==1.1.0
 requests==2.21.0
 MarkupSafe==1.1.1
+numpy
 oauthlib==3.0.1
 pyOpenSSL==19.0.0
 Werkzeug==1.0.1
