@@ -166,7 +166,7 @@ def predict():
 
     return render_template('advise.html',
                            predictiontext='Salary estimator has completed the analysis.\nSuggested Salary is: ${} per '
-                                          'year.\n\nThis calculation was based on level of Education {} '.format(output, final[0], ))
+                                          'year.\n\nThis calculation was based on a Level of Education = {}, {} Years of Coding, and {} Years of Coding Professionally.'.format(output, final[0][0], final[0][1], final[0][2], ))
 
 
 @app.route("/logout")
