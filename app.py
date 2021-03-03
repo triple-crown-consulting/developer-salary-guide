@@ -141,7 +141,7 @@ def callback():
         id_=unique_id, name=users_name, email=users_email, profile_pic=picture
     )
 
-    # Doesn't exist? Add it to the database.
+    # If the user does not exist, add user to sqlite3 database
     if not User.get(unique_id):
         User.create(unique_id, users_name, users_email, picture)
 
