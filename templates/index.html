@@ -22,9 +22,8 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <div class="row center">
-        <form action='/predict' method="POST" class="col s12" id="advisorForm" onsubmit="submitButton.disabled = true; return true;>
-            <div class=" row
-        ">
+        <form action='/predict' method="POST" class="col s12" id="advisorForm" onsubmit="submitButton.disabled = true; return true;">
+            <div class="row">
         <div class="input-field col s4">
             <label for="educationLevel" class="form-label">Education Level</label>
             <input id="educationLevel" name='EducationLevel' type="range" class="form-range validate" min="0"
@@ -59,7 +58,7 @@
         <br/>
         <h4 class="text-center">{{ predictiontext }}</h4>
     </div>
-    </div>
+
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna
@@ -105,5 +104,5 @@
         <h5 class="title">{{ current_user.email }}</h5>
         <p><a class="btn btn-primary" href="/logout">Logout</a></p>
     </div>
-
+    </div>
 {% endblock %}
