@@ -13,104 +13,117 @@
 
     <p>this area will be interactive content for the project</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.<br>
-        For Education Level, use this key:<br>
-        0 - I never completed any formal education<br>
-        1 - Primary/elementary school<br>
-        2 - Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)<br>
-        3 - Some college/university study without earning a degree<br>
-        4 - Associate degree (A.A., A.S., etc.)<br>
-        5- Bachelor's degree (B.A., B.S., B.Eng., etc.)<br>
-        6 - Master's degree (M.A., M.S., M.Eng., MBA, etc.)<br>
-        7 - Professional degree (JD, MD, etc.)<br>
-        8 - Other doctoral degree (Ph.D., Ed.D., etc.)
-    </p>
-
+    <div class="row">
+        <div class="col">
+            <p>Use this form to enter information you have gathered from a qualified candidate. Once a candidate has
+                passed interview assessments and reached the offer phase, select the appropriate values below based on
+                the candidate's resume or other interviews you have conducted. <br>
+        </div>
+        <div class="col">
+            For <strong>Education Level, use this key:</strong><br>
+            0 - I never completed any formal education<br>
+            1 - Primary/elementary school<br>
+            2 - Secondary school (American high school, etc.)<br>
+            3 - Some college/university study without earning a degree<br>
+            4 - Associate degree (A.A., A.S., etc.)<br>
+            5- Bachelor's degree (B.A., B.S., B.Eng., etc.)<br>
+            6 - Master's degree (M.A., M.S., M.Eng., MBA, etc.)<br>
+            7 - Professional degree (JD, MD, etc.)<br>
+            8 - Other doctoral degree (Ph.D., Ed.D., etc.)
+            </p>
+        </div>
+    </div>
     <div class="row center">
-        <form action='/predict' method="POST" class="col s12" id="advisorForm" onsubmit="submitButton.disabled = true; return true;">
+        <form action='/predict' method="POST" class="col s12" id="advisorForm"
+              onsubmit="submitButton.disabled = true; return true;">
             <div class="row">
-        <div class="input-field col s4">
-            <label for="educationLevel" class="form-label">Education Level</label>
-            <input id="educationLevel" name='EducationLevel' type="range" class="form-range validate" min="0"
-                   max="8"
-                   value="0" oninput="this.nextElementSibling.value = this.value">
-            <output class="text-center">0</output>
+                <div class="input-field col s4">
+                    <label for="educationLevel" class="form-label">Education Level</label>
+                    <input id="educationLevel" name='EducationLevel' type="range" class="form-range validate" min="0"
+                           max="8"
+                           value="0" oninput="this.nextElementSibling.value = this.value">
+                    <output class="text-center">0</output>
+                </div>
+                <div class="input-field col s4">
+                    <label for="yearsCode" class="form-label">Years of Coding</label>
+                    <input id="yearsCode" name='YearsCode' type="range" class="form-range validate" min="0" max="51"
+                           value="0"
+                           oninput="this.nextElementSibling.value = this.value">
+                    <output class="text-center">0</output>
+                </div>
+                <div class="input-field col s4">
+                    <label for="yearsCodePro" class="form-label">Years of Coding Professionally</label>
+                    <input id="yearsCodePro" name='YearsCodePro' type="range" class="form-range validate" min="0"
+                           max="51" value="0"
+                           oninput="this.nextElementSibling.value = this.value">
+                    <output class="text-center">0</output>
+                </div>
+
+            </div>
+
+            <div class="row center">
+                <div class="col-sm">
+                    <button type="submit" class="btn btn-primary" name="submitButton">Advise on Salary</button>
+                </div>
+            </div>
+        </form>
+        <div>
+            <br/>
+            <h4 class="text-center">{{ predictiontext }}</h4>
         </div>
-        <div class="input-field col s4">
-            <label for="yearsCode" class="form-label">Years of Coding</label>
-            <input id="yearsCode" name='YearsCode' type="range" class="form-range validate" min="0" max="51"
-                   value="0"
-                   oninput="this.nextElementSibling.value = this.value">
-            <output class="text-center">0</output>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur
+            sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <hr>
+
+
+        <h1>Recruiter Information Area</h1>
+        <div class="progress">
+            <br/>
+            <div class="progress-bar my-2" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                 aria-valuemax="100"></div>
+            <br/>
         </div>
-        <div class="input-field col s4">
-            <label for="yearsCodePro" class="form-label">Years of Coding Professionally</label>
-            <input id="yearsCodePro" name='YearsCodePro' type="range" class="form-range validate" min="0"
-                   max="51" value="0"
-                   oninput="this.nextElementSibling.value = this.value">
-            <output class="text-center">0</output>
+
+        <p>this area will be content for the project</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum.</p>
+        <blockquote>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+        </blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum.</p>
+
+
+        <div class="progress">
+            <br/>
+            <div class="progress-bar my-2" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                 aria-valuemax="100"></div>
+            <br/>
         </div>
-
-    </div>
-
-    <div class="row center">
-        <div class="col-sm">
-            <button type="submit" class="btn btn-primary" name="submitButton">Advise on Salary</button>
+        <div class="card my-4">
+            <img src='{{ current_user.profile_pic }}' alt='Google profile pic' style="width:100%">
+            <h3>Logged in as:</h3>
+            <h5>{{ current_user.name }}</h5>
+            <h5 class="title">{{ current_user.email }}</h5>
+            <p><a class="btn btn-primary" href="/logout">Logout</a></p>
         </div>
-    </div>
-    </form>
-    <div>
-        <br/>
-        <h4 class="text-center">{{ predictiontext }}</h4>
-    </div>
-
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <hr>
-
-
-    <h1>Recruiter Information Area</h1>
-    <div class="progress">
-        <br/>
-        <div class="progress-bar my-2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-        <br/>
-    </div>
-
-    <p>this area will be content for the project</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-    <blockquote>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </blockquote>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-
-
-    <div class="progress">
-        <br/>
-        <div class="progress-bar my-2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-        <br/>
-    </div>
-    <div class="card my-4">
-        <img src='{{ current_user.profile_pic }}' alt='Google profile pic' style="width:100%">
-        <h3>Logged in as:</h3>
-        <h5>{{ current_user.name }}</h5>
-        <h5 class="title">{{ current_user.email }}</h5>
-        <p><a class="btn btn-primary" href="/logout">Logout</a></p>
-    </div>
     </div>
 {% endblock %}
