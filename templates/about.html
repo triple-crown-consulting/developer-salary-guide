@@ -13,10 +13,12 @@
 
     <hr>
     <p>To use the tool, be sure you have logged in using the Google authentication available below.</p>
-    <a class="btn btn-primary" id="login-button" href="/login">Google Login</a>
-<script>
-if (current_user.is_authenticated) {
+{#    <a class="btn btn-primary" id="login-button" href="/login">Google Login</a>#}
 
-}
-</script>
+    {% if current_user.is_authenticated %}
+        <a class="btn btn-primary" href="/logout">Logout</a>
+{% else %}
+        <a class="btn btn-primary" href="/login">Google Login</a>
+{% endif %}
+
 {% endblock %}
