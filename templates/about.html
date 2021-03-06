@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    <h1>External View</h1>
+    <h1>Welcome</h1>
 <hr>
 
    <p>this area will be generic, external content about the project</p>
@@ -13,7 +13,10 @@
 
     <hr>
     <p>To use the tool, be sure you have logged in using the Google authentication available below.</p>
-    <a class="btn btn-primary" href="/login">Google Login</a>
+    <a class="btn btn-primary" id="login-button" href="/login">Google Login</a>
+<script>
+if (current_user.is_authenticated) {
 
-
+}
+</script>
 {% endblock %}
