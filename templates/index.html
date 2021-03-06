@@ -22,42 +22,43 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <div class="row center">
-        <form action='/predict' method="POST" class="col s12" id="advisorForm">
-            <div class="row">
-                <div class="input-field col s4">
-                    <label for="educationLevel" class="form-label">Education Level</label>
-                    <input id="educationLevel" name='EducationLevel' type="range" class="form-range validate" min="0"
-                           max="8"
-                           value="0" oninput="this.nextElementSibling.value = this.value">
-                    <output class="text-center">0</output>
-                </div>
-                <div class="input-field col s4">
-                    <label for="yearsCode" class="form-label">Years of Coding</label>
-                    <input id="yearsCode" name='YearsCode' type="range" class="form-range validate" min="0" max="51"
-                           value="0"
-                           oninput="this.nextElementSibling.value = this.value">
-                    <output class="text-center">0</output>
-                </div>
-                <div class="input-field col s4">
-                    <label for="yearsCodePro" class="form-label">Years of Coding Professionally</label>
-                    <input id="yearsCodePro" name='YearsCodePro' type="range" class="form-range validate" min="0"
-                           max="51" value="0"
-                           oninput="this.nextElementSibling.value = this.value">
-                    <output class="text-center">0</output>
-                </div>
-
-            </div>
-
-            <div class="row center">
-                <div class="col-sm">
-                    <button type="submit" class="btn btn-primary">Advise on Salary</button>
-                </div>
-            </div>
-        </form>
-        <div>
-            <br/>
-            <h4 class="text-center">{{ predictiontext }}</h4>
+        <form action='/predict' method="POST" class="col s12" id="advisorForm" onsubmit="submitButton.disabled = true; return true;>
+            <div class=" row
+        ">
+        <div class="input-field col s4">
+            <label for="educationLevel" class="form-label">Education Level</label>
+            <input id="educationLevel" name='EducationLevel' type="range" class="form-range validate" min="0"
+                   max="8"
+                   value="0" oninput="this.nextElementSibling.value = this.value">
+            <output class="text-center">0</output>
         </div>
+        <div class="input-field col s4">
+            <label for="yearsCode" class="form-label">Years of Coding</label>
+            <input id="yearsCode" name='YearsCode' type="range" class="form-range validate" min="0" max="51"
+                   value="0"
+                   oninput="this.nextElementSibling.value = this.value">
+            <output class="text-center">0</output>
+        </div>
+        <div class="input-field col s4">
+            <label for="yearsCodePro" class="form-label">Years of Coding Professionally</label>
+            <input id="yearsCodePro" name='YearsCodePro' type="range" class="form-range validate" min="0"
+                   max="51" value="0"
+                   oninput="this.nextElementSibling.value = this.value">
+            <output class="text-center">0</output>
+        </div>
+
+    </div>
+
+    <div class="row center">
+        <div class="col-sm">
+            <button type="submit" class="btn btn-primary" id="submitButton">Advise on Salary</button>
+        </div>
+    </div>
+    </form>
+    <div>
+        <br/>
+        <h4 class="text-center">{{ predictiontext }}</h4>
+    </div>
     </div>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
